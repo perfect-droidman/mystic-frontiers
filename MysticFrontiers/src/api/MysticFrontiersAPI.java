@@ -1,4 +1,6 @@
-package mystic_frontiers;
+package api;
+
+
 
 import java.net.URI;
 import java.net.http.HttpClient;
