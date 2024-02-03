@@ -10,5 +10,7 @@ package mysticfrontiers;
  * @author gabegrosse
  */
 public class MysticFrontiers {
-    
+    public static void main(String[] args) {
+        
+    }
 }
