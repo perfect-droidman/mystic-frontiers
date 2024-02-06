@@ -1,5 +1,5 @@
 
-package mysticfrontiers.persistence;
+package main.java.mysticfrontiers.persistence;
 
 import java.io.File;
 

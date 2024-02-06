@@ -268,7 +268,7 @@
     </target>
 
         
-    <!-- Native Packaging mysticfrontiers.main target -->
+    <!-- Native Packaging main.java.mysticfrontiers.main target -->
     
     <target name="build-native" depends="-set-do-build-native-package, -check-ant-jre-supports-native-packaging, -check-native-packager-external-tools, -fx-jar-impl, -build-native-impl, -post-build-native-cleanup"/>
 
@@ -601,7 +601,7 @@
                 app.setProject(project);
                 var title = new String(project.getProperty("application.title"));
                 var mainclass;
-                mainclass = new String(project.getProperty("mysticfrontiers.main.class"));
+                mainclass = new String(project.getProperty("main.java.mysticfrontiers.TrickCard.class"));
                 if(isTrue(fx_ant_api_1_2)) {
                     app.setToolkit("swing");
                 }
@@ -695,7 +695,7 @@
     </target>
 
     
-    <!-- Native Packaging mysticfrontiers.main implementation -->
+    <!-- Native Packaging main.java.mysticfrontiers.main implementation -->
     
     <target name="-build-native-impl" depends="-check-ant-jre-supports-native-packaging, -check-native-packager-external-tools, -fx-jar-impl">
 
@@ -827,7 +827,7 @@
                 app.setProject(project);
                 var title = new String(project.getProperty("application.title"));
                 var mainclass;
-                mainclass = new String(project.getProperty("mysticfrontiers.main.class"));
+                mainclass = new String(project.getProperty("main.java.mysticfrontiers.TrickCard.class"));
                 if(isTrue(fx_ant_api_1_2)) {
                     app.setToolkit("swing");
                 }

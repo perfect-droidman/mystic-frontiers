@@ -1,4 +1,6 @@
-package mysticfrontiers.models;
+package main.java.mysticfrontiers.CreatureCard;
+
+import main.java.mysticfrontiers.common.Card;
 
 public class CreatureCard extends Card {
     private int manaCost;

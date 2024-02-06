@@ -1,9 +1,9 @@
-package mysticfrontiers.models;
+package main.java.mysticfrontiers.abilitycard;
 
-/**
- *
- * @author gabegrosse
- */
+import main.java.mysticfrontiers.common.Card;
+
+import java.io.PrintStream;
+
 public class AbilityCard extends Card {
     private int manaCost;
     private String abilityCardType; // Normal, Enhancement, Flash, Infinite
@@ -26,7 +26,7 @@ public class AbilityCard extends Card {
         
         System.out.println(border);
         // Top section
-        System.out.printf("%s%-15s %-40s Mana Cost: %d%s%n", indent, "", name, manaCost, endIndent);
+        PrintStream printf = System.out.printf("%s%-15s %-40s Mana Cost: %d%s%n", indent, name, manaCost, endIndent);
         
         // Middle section - Image placeholder
         System.out.println(indent + "[Image Placeholder: Ability Icon or Artwork]" + endIndent);
@@ -49,24 +49,23 @@ public class AbilityCard extends Card {
         return manaCost;
     }
     
-    public String getAbilityCardType() {
-        return abilityCardType;
-    }
-    
-    public String getEffectDescription() {
-        return effectDescription;
-    }
-    
     public void setManaCost(int manaCost) {
         this.manaCost = manaCost;
+    }
+    
+    public String getAbilityCardType() {
+        return abilityCardType;
     }
     
     public void setAbilityCardType(String abilityCardType) {
         this.abilityCardType = abilityCardType;
     }
     
+    public String getEffectDescription() {
+        return effectDescription;
+    }
+    
     public void setEffectDescription(String effectDescription) {
         this.effectDescription = effectDescription;
     }
 }
-

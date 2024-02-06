@@ -1,4 +1,4 @@
-package mysticfrontiers.models;
+package main.java.mysticfrontiers.common;
 
 public abstract class Card {
     protected String id;

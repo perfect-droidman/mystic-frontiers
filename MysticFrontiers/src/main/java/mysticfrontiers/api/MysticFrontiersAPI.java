@@ -1,13 +1,13 @@
-package mysticfrontiers.api;
+package main.java.mysticfrontiers.api;
 
 
+import org.json.JSONObject;
 
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
-import org.json.JSONObject;
 
 public class MysticFrontiersAPI {
     
